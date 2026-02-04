@@ -1,0 +1,37 @@
+/*Primary*/
+$color-primary: hsla(341, 87%, 60%, 1);
+$color-primary-var: hsla(341, 87%, 70%, 1);
+$color-primary-hover: hsla(341, 70%, 50%, 1);
+$color-primary-active: hsla(341, 70%, 40%, 1);
+$color-on-primary: hsla(0, 0%, 100%, 1);
+$color-primary-container: hsla(341, 87%, 93%, 1);
+$color-on-primary-container: hsla(341, 87%, 14%, 1);
+
+/*Secondary*/
+$color-secondary: hsla(228, 94%, 65%, 1);
+$color-secondary-var: hsla(228, 94%, 74%, 1);
+$color-secondary-hover: hsla(228, 80%, 55%, 1);
+$color-secondary-active: hsla(228, 75%, 44%, 1);
+$color-on-secondary: hsla(0, 0%, 100%, 1);
+$color-secondary-container: hsla(227, 94%, 93%, 1);
+$color-on-secondary-container: hsla(228, 80%, 14%, 1);
+
+/*Tertiary*/
+$color-tertiary: hsla(175, 79%, 38%, 1);
+$color-tertiary-var: hsla(175, 70%, 47%, 1);
+$color-tertiary-hover: hsla(175, 85%, 28%, 1);
+$color-tertiary-active: hsla(175, 79%, 18%, 1);
+$color-on-tertiary: hsla(0, 0%, 100%, 1);
+$color-tertiary-container: hsla(175, 70%, 90%, 1);
+$color-on-tertiary-container: hsla(175, 79%, 14%, 1);
+
+/*Surface*/
+$color-surface:hsla(0, 0%, 100%, 1);
+$color-surface-var: hsla(227, 6%, 93%, 1);
+$color-on-surface: hsla(228, 6%, 10%, 1);
+$color-on-surface-var: hsla(228, 6%, 22%, 1);
+$color-outline: hsla(228, 6%, 65%, 1);
+$color-outline-var: hsla(227, 6%, 83%, 1);
+
+/*Opacity*/
+$color-opacity-on-surface-60: hsla(228, 6%, 10%, 0.6);
