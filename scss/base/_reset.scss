@@ -1,0 +1,11 @@
+@use 'tokens/tokens';
+
+* {
+  box-sizing: border-box;
+  margin: tokens.$margin-none;
+  padding: tokens.$padding-none;
+}
+
+h1, h2, h3, h4,  h5 {
+  margin: tokens.$margin-none;
+}
