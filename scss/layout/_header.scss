@@ -1,0 +1,7 @@
+  @use 'tokens/tokens';
+  @use 'base/base';
+  @use 'base/reset';
+
+  #header {
+    display: flex;
+  }
