@@ -1,7 +1,11 @@
 /*Primary*/
 /*Secondary*/
 /*Tertiary*/
+/*Base*/
 /*Surface*/
+/*Error*/
+/*Warning*/
+/*Success*/
 /*Opacity*/
 /*Font size*/
 /*Font family*/
@@ -10,5 +14,184 @@
 /*Margin*/
 /*Gap*/
 /*Border-radius*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: hsl(228, 6%, 10%);
+  background-color: hsl(227, 6%, 93%);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Funnel Display", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: hsl(228, 6%, 10%);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*Flex*/
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-auto {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*Container*/
+.container {
+  max-width: 1320px;
+}
+
+.content {
+  max-width: 720px;
+}
+
+/*Padding*/
+.pad-xxs {
+  padding: 0.125rem;
+}
+
+.pad-xs {
+  padding: 0.25rem;
+}
+
+.pad-s {
+  padding: 0.5rem;
+}
+
+.pad-m {
+  padding: 0.75rem;
+}
+
+.pad-l {
+  padding: 1rem;
+}
+
+.pad-xl {
+  padding: 1.25rem;
+}
+
+.pad-xxl {
+  padding: 1.5rem;
+}
+
+/*Gap*/
+.gap-xxs {
+  gap: 0.125rem;
+}
+
+.gap-xs {
+  gap: 0.25rem;
+}
+
+.gap-s {
+  gap: 0.5rem;
+}
+
+.gap-m {
+  gap: 0.75rem;
+}
+
+.gap-l {
+  gap: 1rem;
+}
+
+.gap-xl {
+  gap: 1.25rem;
+}
+
+.gap-xxl {
+  gap: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  margin: 0rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(228, 6%, 10%);
+  padding: 1.25rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: hsl(228, 6%, 10%);
+  padding: 1.25rem;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0px;
+}
 
 /*# sourceMappingURL=style.css.map */
