@@ -142,7 +142,7 @@ button {
 }
 
 .pad-xxl {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 /*Gap*/
@@ -171,7 +171,7 @@ button {
 }
 
 .gap-xxl {
-  gap: 2rem;
+  gap: 3rem;
 }
 
 /*Text align*/
@@ -194,7 +194,8 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
+  gap: 3rem;
 }
 
 .footer {
@@ -208,10 +209,12 @@ button {
 
 .container {
   max-width: 1320px;
+  padding: 0;
 }
 
-.container.s {
+.container-s {
   max-width: 720px;
+  padding: 0;
 }
 
 .index-body {
@@ -257,6 +260,143 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.card {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 6px 1px hsla(228, 6%, 10%, 0.15);
+}
+.card__header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 1rem;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.card:hover {
+  background-color: hsl(227, 6%, 91%);
+}
+.card:active {
+  background-color: hsl(341, 87%, 93%);
+}
+.card.is-disabled, .card[aria-disabled=true] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.25rem;
+}
+.section__header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 1rem;
+}
+.section__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.section__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+.section__footer button {
+  width: 100%;
+}
+
+.logo {
+  display: block;
+  height: 3rem;
+  width: auto;
+}
+
+.vector {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn__primary {
+  background-color: hsl(341, 87%, 60%);
+  border: solid 1px hsl(341, 87%, 60%);
+  color: hsl(0, 0%, 100%);
+}
+.btn__primary:hover {
+  background-color: hsl(341, 70%, 50%);
+  border: solid 1px hsl(341, 70%, 50%);
+  color: hsl(0, 0%, 100%);
+}
+.btn__primary:active {
+  background-color: hsl(341, 70%, 40%);
+  border: solid 1px hsl(341, 70%, 40%);
+  color: hsl(0, 0%, 100%);
+}
+.btn__primary:disabled {
+  background-color: hsl(341, 87%, 60%);
+  border: solid 1px hsl(341, 87%, 60%);
+  color: hsl(0, 0%, 100%);
+  opacity: 0.6;
+  cursor: none;
+}
+.btn__base {
+  background-color: hsl(227, 6%, 91%);
+  border: solid 1px hsl(227, 6%, 91%);
+  color: hsl(228, 6%, 22%);
+}
+.btn__base:hover {
+  background-color: hsl(227, 6%, 83%);
+  border: solid 1px hsl(227, 6%, 83%);
+  color: hsl(228, 6%, 22%);
+}
+.btn__base:active {
+  background-color: hsl(228, 6%, 74%);
+  border: solid 1px hsl(228, 6%, 74%);
+  color: hsl(228, 6%, 22%);
+}
+.btn__base:disabled {
+  background-color: hsl(227, 6%, 91%);
+  border: solid 1px hsl(227, 6%, 91%);
+  color: hsl(228, 6%, 22%);
+  opacity: 0.6;
+  cursor: none;
+}
+.btn span {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

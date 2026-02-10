@@ -14,7 +14,9 @@
 <body class="index-body">
     <header class="header">
         <div class="container flex flex-row justify-auto align-center">
-            <img src="assets/image/logo-tooly.svg" alt="Logo Tooly">
+            <a href="index.html">
+                <img src="assets/image/logo-tooly.svg" alt="Logo Tooly">
+            </a>
             <div class="flex flex-row justify-left gap-s">
                 <a class="link" href="index.html">Inicio</a>
                 <button id="btn-menu" class="link">
@@ -25,21 +27,30 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container flex flex-column align-center pad-xxl gap-xxl">
-            <section class="container s flex flex-column align-center pad-xxl gap-xl">
-                <img src="assets/image/imagotipo.svg" alt="Imagotipo Tooly">
-                <h1 class="display text-centered">Pequeñas herramientas, grandes soluciones.</h1>
-                <p class="text-centered">Traduce textos, convierte monedas y resuelve tareas básicas en segundos, sin complicaciones.</p>
-            </section>
-            <section class="container s flex flex-row gap-l">
-                <div class="card flex-column">
-                    <div class="header">
-                        <img src="assets/image/imagotipo.svg" alt="Imagotipo Tooly">
-                    </div>
+    <main class="main">
+        <section class="container-s flex flex-column align-center pad-xxl gap-xl">
+            <img src="assets/image/imagotipo.svg" alt="Imagotipo Tooly">
+            <h1 class="display text-centered">Pequeñas herramientas, grandes soluciones.</h1>
+            <p class="text-centered">Traduce textos, convierte monedas y resuelve tareas básicas en segundos, sin complicaciones.</p>
+        </section>
+        <section class="container-s flex flex-row gap-l">
+            <a class="card flex-column" href="translator.html">
+                <div class="card__header">
+                    <img src="assets/image/logo-translator.svg" alt="Logo Translator">
                 </div>
-            </section>
-        </div>
+                <div class="card__body">
+                    <p>Escribe o pega el texto, selecciona los idiomas y obtén la traducción.</p>
+                </div>
+            </a>
+            <a class="card flex-column" href="converter.html">
+                <div class="card__header">
+                    <img src="assets/image/logo-converter.svg" alt="Logo Converter">
+                </div>
+                <div class="card__body">
+                    <p>Introduce una cantidad, elige las monedas y obtén el resultado.</p>
+                </div>
+            </a>
+        </section>
     </main>
     <footer>
 

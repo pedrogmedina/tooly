@@ -1,10 +1,10 @@
 @use '../tokens/tokens';
 
-.card {
+.section{
+    flex: 1;
     display: flex;
     background-color: tokens.$color-surface;
     border-radius: tokens.$border-radius-l;
-    box-shadow: 0 1px 6px 1px tokens.$color-opacity-on-surface-15;
 
     &__header {
         display: flex;
@@ -25,19 +25,9 @@
         flex-direction: row;
         justify-content: flex-start;
         padding: tokens.$padding-l;
-    }
 
-    &:hover {
-        background-color: tokens.$color-base;
-    }
-
-    &:active {
-        background-color: tokens.$color-primary-container;
-    }
-
-    &.is-disabled,
-    &[aria-disabled="true"] {
-    opacity: 0.6;
-    pointer-events: none;
+        button {
+            width: 100%;
+        }
     }
 }
