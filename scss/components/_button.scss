@@ -10,6 +10,7 @@
     border-radius: tokens.$border-radius-s;
     font-size: tokens.$font-size-16;
     font-weight: tokens.$font-weight-semibold;
+    min-height: 40px;
 
     &--primary {
         background-color: tokens.$color-primary;
@@ -63,6 +64,11 @@
         cursor: none;
     }
     
+    &--icon-only {
+    max-width: 40px;
+    max-height: 40px;
+    }
+
     span {
     font-size: tokens.$font-size-16;
     font-weight: tokens.$font-weight-semibold;

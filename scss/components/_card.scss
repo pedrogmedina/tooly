@@ -4,27 +4,30 @@
     display: flex;
     background-color: tokens.$color-surface;
     border-radius: tokens.$border-radius-l;
+    padding: tokens.$padding-l;
+    gap: tokens.$gap-l;
+
     box-shadow: 0 1px 6px 1px tokens.$color-opacity-on-surface-15;
     min-width: 280px;
     &__header {
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
-        padding: tokens.$padding-l;
+        gap: tokens.$gap-l;
     }
 
     &__body {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: tokens.$padding-l;
+        gap: tokens.$gap-l;
     }
 
     &__footer {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        padding: tokens.$padding-l;
+        gap: tokens.$gap-l;
     }
 
     &:hover {

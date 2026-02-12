@@ -29,25 +29,42 @@
     </header>
     <main class="main">
         <div class="container">
+            <div class="flex flex-row justify-left gap-s">
+                <a class="btn link" href="index.html">Inicio
+                    <span class="material-symbols-outlined">keyboard_arrow_right</span>
+                </a>
+                <a class="link" href="translator.html">Traductor</a>
+            </div>
             <div class="container-inner flex-column">
                 <section class="container flex flex-column align-center gap-xl">
-                    <img class="logo" src="assets/image/logo-translator.svg" alt="Logo Translator">
-                    <div class="container-s flex flex-column">
+                    <img class="logo-m" src="assets/image/logo-translator.svg" alt="Logo Translator">
+                    <div class="container-s flex flex-column gap-xxs">
                         <p class="text-centered">
                             Selecciona el idioma de origen y el idioma de destino. 
+                        </p>
+                        <p class="text-centered">
                             Escribe o pega el texto que deseas traducir y pulsa Traducir para obtener el resultado al instante.
                         </p>
                     </div>
                 </section>
-                <section class="grid-col-2">
+                <section class="grid-col-3-auto align-center">
                     <div class="section flex-column">
                         <div class="section__header">
                             <h4>Texto de origen</h4>
                         </div>
                         <div class="section__body">
-                            <form>
-                                
-                            </form>
+                            <div class="select-wrapper">
+                                <label for="lanOrigin">Idioma</label>
+                                <select id="lanOrigin" name="lanOrigin" required>
+                                    <option value="" disabled selected>Seleccionar</option>
+                                    <option value="ES">Español</option>
+                                    <option value="EN">English</option>
+                                </select>
+                            </div>
+                            <div class="textarea-wrapper">
+                                <label for="txtOrigin">Texto de origen</label>
+                                <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Escribe o copia un texto" required></textarea>
+                            </div>
                         </div>
                         <div class="section__footer">
                             <button class="btn btn--primary">
@@ -55,14 +72,28 @@
                             </button>
                         </div>
                     </div>
+                    <button id="btnSwap" class="btn btn--base btn--icon-only">
+                        <span class="material-symbols-outlined">swap_horiz</span>
+                    </button>
                     <div class="section flex-column">
                         <div class="section__header">
                             <h4>Texto traducido</h4>
                         </div>
                         <div class="section__body">
-                            <form>
-                                    
-                            </form>
+                            <div class="section__body">
+                                <div class="select-wrapper">
+                                    <label for="lanOrigin">Idioma</label>
+                                    <select id="lanOrigin" name="lanOrigin" required>
+                                        <option value="" disabled selected>Seleccionar</option>
+                                        <option value="ES">Español</option>
+                                        <option value="EN">English</option>
+                                    </select>
+                                </div>
+                                <div class="textarea-wrapper">
+                                    <label for="txtOrigin">Texto traducido</label>
+                                    <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Texto traducido aparecerá aquí" readonly></textarea>
+                                </div>
+                            </div>
                         </div>
                         <div class="section__footer">
                             <button class="btn btn--base">

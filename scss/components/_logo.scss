@@ -1,4 +1,11 @@
-.logo {
+@use '../tokens/tokens';
+
+.logo-l {
+    display: block;
+    padding-top: tokens.$padding-xl;
+}
+
+.logo-m {
     display: block;
     height: 3rem;
     width: auto;

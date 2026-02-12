@@ -1,6 +1,6 @@
 @use '../tokens/tokens';
 
-.input-wrapper {
+.select-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -12,16 +12,20 @@
         font-weight: tokens.$font-weight-semibold;
     }
 
-    input {
+    select {
         font-family: inherit;
         font-size: inherit;
         font-weight: inherit;
         width: 100%;
         min-height: 40px;
-        padding: tokens.$padding-xxs;
+        padding: tokens.$padding-s tokens.$padding-m;
         border-radius: tokens.$border-radius-s;
         border: solid 1px tokens.$color-outline;
         background-color: tokens.$color-surface;
+
+        appearance: none;         
+        -webkit-appearance: none;
+        -moz-appearance: none;
 
         &:hover {
             border: solid 1px tokens.$color-on-surface-var;
@@ -39,6 +43,12 @@
         
         &::placeholder {
             color: tokens.$color-opacity-on-surface-60;
+        }
+        
+        option {
+            background-color: tokens.$color-surface-var;
+            color: tokens.$color-on-surface;
+
         }
     }
 }

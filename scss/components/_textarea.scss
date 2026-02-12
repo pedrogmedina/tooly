@@ -1,6 +1,6 @@
 @use '../tokens/tokens';
 
-.input-wrapper {
+.textarea-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -12,16 +12,21 @@
         font-weight: tokens.$font-weight-semibold;
     }
 
-    input {
+    textarea {
         font-family: inherit;
         font-size: inherit;
         font-weight: inherit;
         width: 100%;
-        min-height: 40px;
-        padding: tokens.$padding-xxs;
+        min-height: 200px;
+        max-height: 400px;
+        min-width: 100%;
+        max-width: 512px;
+        padding: tokens.$padding-s tokens.$padding-m;
         border-radius: tokens.$border-radius-s;
         border: solid 1px tokens.$color-outline;
         background-color: tokens.$color-surface;
+        resize: none;
+
 
         &:hover {
             border: solid 1px tokens.$color-on-surface-var;

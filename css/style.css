@@ -145,7 +145,7 @@ button {
 }
 
 .pad-xxl {
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
 .gap-xxs {
@@ -173,11 +173,7 @@ button {
 }
 
 .gap-xxl {
-  gap: 3rem;
-}
-
-.wrap {
-  flex-wrap: wrap;
+  gap: 2.5rem;
 }
 
 .text-centered {
@@ -200,12 +196,12 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 3rem 1.5rem 3rem 1.5rem;
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
   min-height: 100vh;
 }
 @media (max-width: 992px) {
   .main {
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 2.5rem 1rem 2.5rem 1rem;
   }
 }
 
@@ -220,7 +216,7 @@ button {
 
 .container-inner {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .container-inner-small {
@@ -253,6 +249,12 @@ button {
   .grid-col-3 {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.grid-col-3-auto {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
 }
 
 .index-body {
@@ -305,6 +307,8 @@ button {
   display: flex;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.25rem;
+  padding: 1rem;
+  gap: 1rem;
   box-shadow: 0 1px 6px 1px hsla(228, 6%, 10%, 0.15);
   min-width: 280px;
 }
@@ -312,19 +316,19 @@ button {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  padding: 1rem;
+  gap: 1rem;
 }
 .card__body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem;
+  gap: 1rem;
 }
 .card__footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 1rem;
+  gap: 1rem;
 }
 .card:hover {
   background-color: hsl(227, 6%, 91%);
@@ -340,6 +344,8 @@ button {
 .section {
   flex: 1;
   display: flex;
+  padding: 1rem;
+  gap: 1rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.25rem;
 }
@@ -347,25 +353,30 @@ button {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  padding: 1rem;
+  gap: 1rem;
 }
 .section__body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1rem;
+  gap: 1rem;
 }
 .section__footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 1rem;
+  gap: 1rem;
 }
 .section__footer button {
   width: 100%;
 }
 
-.logo {
+.logo-l {
+  display: block;
+  padding-top: 1.5rem;
+}
+
+.logo-m {
   display: block;
   height: 3rem;
   width: auto;
@@ -395,6 +406,7 @@ button {
   border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: 600;
+  min-height: 40px;
 }
 .btn--primary {
   background-color: hsl(341, 87%, 60%);
@@ -440,9 +452,135 @@ button {
   opacity: 0.6;
   cursor: none;
 }
+.btn--icon-only {
+  max-width: 40px;
+  max-height: 40px;
+}
 .btn span {
   font-size: 1rem;
   font-weight: 600;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;
+}
+.input-wrapper label {
+  color: hsl(228, 6%, 22%);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.input-wrapper input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
+  min-height: 40px;
+  padding: 0.125rem;
+  border-radius: 0.75rem;
+  border: solid 1px hsl(228, 6%, 65%);
+  background-color: hsl(0, 0%, 100%);
+}
+.input-wrapper input:hover {
+  border: solid 1px hsl(228, 6%, 22%);
+}
+.input-wrapper input:focus {
+  outline: none;
+  border: solid 1px hsl(341, 87%, 60%);
+}
+.input-wrapper input:disabled {
+  opacity: 60%;
+  cursor: not-allowed;
+}
+.input-wrapper input::placeholder {
+  color: hsla(228, 6%, 10%, 0.6);
+}
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;
+}
+.select-wrapper label {
+  color: hsl(228, 6%, 22%);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.select-wrapper select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
+  min-height: 40px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  border: solid 1px hsl(228, 6%, 65%);
+  background-color: hsl(0, 0%, 100%);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select-wrapper select:hover {
+  border: solid 1px hsl(228, 6%, 22%);
+}
+.select-wrapper select:focus {
+  outline: none;
+  border: solid 1px hsl(341, 87%, 60%);
+}
+.select-wrapper select:disabled {
+  opacity: 60%;
+  cursor: not-allowed;
+}
+.select-wrapper select::placeholder {
+  color: hsla(228, 6%, 10%, 0.6);
+}
+.select-wrapper select option {
+  background-color: hsl(227, 6%, 93%);
+  color: hsl(228, 6%, 10%);
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.25rem;
+}
+.textarea-wrapper label {
+  color: hsl(228, 6%, 22%);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.textarea-wrapper textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  min-width: 100%;
+  max-width: 512px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  border: solid 1px hsl(228, 6%, 65%);
+  background-color: hsl(0, 0%, 100%);
+  resize: none;
+}
+.textarea-wrapper textarea:hover {
+  border: solid 1px hsl(228, 6%, 22%);
+}
+.textarea-wrapper textarea:focus {
+  outline: none;
+  border: solid 1px hsl(341, 87%, 60%);
+}
+.textarea-wrapper textarea:disabled {
+  opacity: 60%;
+  cursor: not-allowed;
+}
+.textarea-wrapper textarea::placeholder {
+  color: hsla(228, 6%, 10%, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
