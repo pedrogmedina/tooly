@@ -57,8 +57,6 @@
                                 <label for="lanOrigin">Idioma</label>
                                 <select id="lanOrigin" name="lanOrigin" required>
                                     <option value="" disabled selected>Seleccionar</option>
-                                    <option value="ES">Español</option>
-                                    <option value="EN">English</option>
                                 </select>
                             </div>
                             <div class="textarea-wrapper">
@@ -67,7 +65,7 @@
                             </div>
                         </div>
                         <div class="section__footer">
-                            <button class="btn btn--primary">
+                            <button id="btnTranslate" class="btn btn--primary">
                                 Traducir
                             </button>
                         </div>
@@ -82,16 +80,14 @@
                         <div class="section__body">
                             <div class="section__body">
                                 <div class="select-wrapper">
-                                    <label for="lanOrigin">Idioma</label>
-                                    <select id="lanOrigin" name="lanOrigin" required>
+                                    <label for="lanTranslate">Idioma</label>
+                                    <select id="lanTranslate" name="lanTranslate" required>
                                         <option value="" disabled selected>Seleccionar</option>
-                                        <option value="ES">Español</option>
-                                        <option value="EN">English</option>
                                     </select>
                                 </div>
                                 <div class="textarea-wrapper">
-                                    <label for="txtOrigin">Texto traducido</label>
-                                    <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Texto traducido aparecerá aquí" readonly></textarea>
+                                    <label for="txtTranslate">Texto traducido</label>
+                                    <textarea id="txtTranslate" name="txtOrigin" class="input" placeholder="Texto traducido aparecerá aquí" readonly></textarea>
                                 </div>
                             </div>
                         </div>
