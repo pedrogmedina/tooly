@@ -1,0 +1,35 @@
+@use '../tokens/tokens';
+
+.section{
+    flex: 1;
+    display: flex;
+    padding: tokens.$padding-l;
+    gap: tokens.$gap-l;
+    background-color: tokens.$color-surface;
+    border-radius: tokens.$border-radius-l;
+
+    &__header {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: tokens.$gap-l;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: tokens.$gap-l;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: tokens.$gap-l;
+
+        button {
+            width: 100%;
+        }
+    }
+}

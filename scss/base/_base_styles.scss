@@ -5,13 +5,29 @@ body {
     font-size: tokens.$font-size-16;
     color: tokens.$color-on-surface;
     background-color: tokens.$color-surface-var;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 h1, h2, h3, h4 {
     font-family: tokens.$font-family-brand;
     font-weight: 700;
     line-height: 1.2;
+}
+
+h1 {
+  font-size: tokens.$font-size-48;
+}
+
+h2 {
+  font-size: tokens.$font-size-36;
+}
+
+h3 {
+  font-size: tokens.$font-size-28;
+}
+
+h4 {
+  font-size: tokens.$font-size-22;
 }
 
 a {
@@ -33,3 +49,8 @@ ul, ol {
 button {
     cursor: pointer;
   }
+
+.label {
+  font-size: tokens.$font-size-14;
+  font-weight: tokens.$font-weight-semibold;
+}
