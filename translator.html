@@ -38,7 +38,7 @@
             <div class="container-inner flex-column">
                 <section class="container flex flex-column align-center gap-xl">
                     <img class="logo-m" src="assets/image/logo-translator.svg" alt="Logo Translator">
-                    <div class="container-s flex flex-column gap-xxs">
+                    <div class="container flex flex-column gap-xxs">
                         <p class="text-centered">
                             Selecciona el idioma de origen y el idioma de destino. 
                         </p>
@@ -47,57 +47,59 @@
                         </p>
                     </div>
                 </section>
-                <section class="grid-col-3-auto align-center">
-                    <div class="section flex-column">
-                        <div class="section__header">
-                            <h4>Texto de origen</h4>
-                        </div>
-                        <div class="section__body">
-                            <div class="select-wrapper">
-                                <label for="lanOrigin">Idioma</label>
-                                <select id="lanOrigin" name="lanOrigin" required>
-                                    <option value="" disabled selected>Seleccionar</option>
-                                </select>
+                <div id="formWrapper" class="container-inner flex flex-column gap-xxs">
+                    <section class="grid-col-3-auto align-center justify-senter">
+                        <div class="section flex-column">
+                            <div class="section__header">
+                                <h4>Texto de origen</h4>
                             </div>
-                            <div class="textarea-wrapper">
-                                <label for="txtOrigin">Texto de origen</label>
-                                <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Escribe o copia un texto" required></textarea>
-                            </div>
-                        </div>
-                        <div class="section__footer">
-                            <button id="btnTranslate" class="btn btn--primary">
-                                Traducir
-                            </button>
-                        </div>
-                    </div>
-                    <button id="btnSwap" class="btn btn--base btn--icon-only">
-                        <span class="material-symbols-outlined">swap_horiz</span>
-                    </button>
-                    <div class="section flex-column">
-                        <div class="section__header">
-                            <h4>Texto traducido</h4>
-                        </div>
-                        <div class="section__body">
                             <div class="section__body">
                                 <div class="select-wrapper">
-                                    <label for="lanTranslate">Idioma</label>
-                                    <select id="lanTranslate" name="lanTranslate" required>
+                                    <label for="lanOrigin">Idioma</label>
+                                    <select id="lanOrigin" name="lanOrigin" required>
                                         <option value="" disabled selected>Seleccionar</option>
                                     </select>
                                 </div>
                                 <div class="textarea-wrapper">
-                                    <label for="txtTranslate">Texto traducido</label>
-                                    <textarea id="txtTranslate" name="txtOrigin" class="input" placeholder="Texto traducido aparecerá aquí" readonly></textarea>
+                                    <label for="txtOrigin">Texto de origen</label>
+                                    <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Escribe o copia un texto" required></textarea>
                                 </div>
                             </div>
+                            <div class="section__footer">
+                                <button id="btnTranslate" class="btn btn--primary">
+                                    Traducir
+                                </button>
+                            </div>
                         </div>
-                        <div class="section__footer">
-                            <button class="btn btn--base">
-                                Copiar
-                            </button>
+                        <button id="btnSwap" class="btn btn--base btn--icon-only">
+                            <span class="material-symbols-outlined">swap_horiz</span>
+                        </button>
+                        <div class="section flex-column">
+                            <div class="section__header">
+                                <h4>Texto traducido</h4>
+                            </div>
+                            <div class="section__body">
+                                <div class="section__body">
+                                    <div class="select-wrapper">
+                                        <label for="lanTranslate">Idioma</label>
+                                        <select id="lanTranslate" name="lanTranslate" required>
+                                            <option value="" disabled selected>Seleccionar</option>
+                                        </select>
+                                    </div>
+                                    <div class="textarea-wrapper">
+                                        <label for="txtTranslate">Texto traducido</label>
+                                        <textarea id="txtTranslate" name="txtOrigin" class="input" placeholder="Texto traducido aparecerá aquí" readonly></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__footer">
+                                <button class="btn btn--base">
+                                    Copiar
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
                 <section class="grid-col-3">
                     <div class="card flex-row">
                         <div class="card__header">

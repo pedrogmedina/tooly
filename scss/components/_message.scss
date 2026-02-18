@@ -1,0 +1,33 @@
+@use '../tokens/tokens';
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: tokens.$gap-s;
+    padding: tokens.$padding-s;
+    border-radius: tokens.$border-radius-xs;
+    font-size: tokens.$font-size-14;
+    font-weight: tokens.$font-weight-medium;
+
+    &--info {
+        background-color: tokens.$color-base-container;
+        color: tokens.$color-on-base-container;
+    }
+
+    &--warning {
+        background-color: tokens.$color-warning-container;
+        color: tokens.$color-on-warning-container;
+    }
+
+    &--error {
+        background-color: tokens.$color-error-container;
+        color: tokens.$color-on-error-container;
+    }
+
+    &--success {
+        background-color: tokens.$color-success-container;
+        color: tokens.$color-on-success-container;
+    }
+}

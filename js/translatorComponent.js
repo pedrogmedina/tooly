@@ -16,19 +16,18 @@ export class TranslatorComponent {
     }
 
     init() {
-        /*Añadir compobación para que el botón no se habilite hasta tener todo relleno*/
         this.elements.btnTranslate.addEventListener('click', async () => {
             await this.translateText();
         })
     }
     
     async translateText() {
-        const lanOrigin = elements.lanOrigin.value;
-        const txtOrigin = elements.txtOrigin.value;
-        const lanTranslate = elements.lanTranslate.value;
-        const txtTranslate = elements.txtTranslate;
+        const lanOrigin = this.elements.lanOrigin.value;
+        const txtOrigin = this.elements.txtOrigin.value;
+        const lanTranslate = this.elements.lanTranslate.value;
+        const txtTranslate = this.elements.txtTranslate;
 
         const translateResult = await this.service.translate(lanOrigin, txtOrigin, lanTranslate);
-        txtTranslate.value = translateResult;
+        txtTranslate.value = translateResult[0][0][0];
     }
 }

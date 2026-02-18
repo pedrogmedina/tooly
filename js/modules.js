@@ -22,5 +22,8 @@ export function generateLanguages() {
     }
 }
 
+export function swapLanguages() {
+    
+}
 
 

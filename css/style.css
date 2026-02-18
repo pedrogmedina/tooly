@@ -256,6 +256,14 @@ button {
   grid-template-columns: 1fr auto 1fr;
   gap: 1rem;
 }
+@media (max-width: 992px) {
+  .grid-col-3-auto {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-col-3-auto .btn--icon-only {
+  max-width: none;
+}
 
 .index-body {
   background-image: url("../../assets/image/bg-index.svg");
@@ -305,6 +313,8 @@ button {
 
 .card {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.25rem;
   padding: 1rem;
@@ -314,20 +324,20 @@ button {
 }
 .card__header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   gap: 1rem;
 }
 .card__body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
 }
 .card__footer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
 }
 .card:hover {
@@ -407,6 +417,7 @@ button {
   font-size: 1rem;
   font-weight: 600;
   min-height: 40px;
+  cursor: pointer;
 }
 .btn--primary {
   background-color: hsl(341, 87%, 60%);
@@ -428,7 +439,7 @@ button {
   border: solid 1px hsl(341, 87%, 60%);
   color: hsl(0, 0%, 100%);
   opacity: 0.6;
-  cursor: none;
+  cursor: not-allowed;
 }
 .btn--base {
   background-color: hsl(227, 6%, 91%);
@@ -581,6 +592,34 @@ button {
 }
 .textarea-wrapper textarea::placeholder {
   color: hsla(228, 6%, 10%, 0.6);
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.message--info {
+  background-color: hsl(227, 6%, 94%);
+  color: hsl(228, 6%, 10%);
+}
+.message--warning {
+  background-color: hsl(28, 60%, 89%);
+  color: hsl(28, 60%, 11%);
+}
+.message--error {
+  background-color: hsl(354, 61%, 90%);
+  color: hsl(354, 61%, 14%);
+}
+.message--success {
+  background-color: hsl(88, 39%, 87%);
+  color: hsl(86, 41%, 14%);
 }
 
 /*# sourceMappingURL=style.css.map */
