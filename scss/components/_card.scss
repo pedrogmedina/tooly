@@ -2,7 +2,6 @@
 
 .card {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: tokens.$color-surface;
     border-radius: tokens.$border-radius-l;
@@ -13,7 +12,6 @@
     min-width: 280px;
     &__header {
         display: flex;
-        justify-content: center;
         flex-direction: row;
         gap: tokens.$gap-l;
     }
@@ -21,6 +19,7 @@
     &__body {
         display: flex;
         flex-direction: column;
+        width: 100%;
         justify-content: center;
         gap: tokens.$gap-l;
     }
@@ -28,7 +27,6 @@
     &__footer {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         gap: tokens.$gap-l;
     }
 

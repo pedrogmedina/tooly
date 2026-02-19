@@ -10,6 +10,9 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -47,7 +50,7 @@
                         </p>
                     </div>
                 </section>
-                <div id="formWrapper" class="container-inner flex flex-column gap-xxs">
+                <div id="formWrapper" class="container-inner flex flex-column">
                     <section class="grid-col-3-auto align-center justify-senter">
                         <div class="section flex-column">
                             <div class="section__header">
@@ -62,7 +65,7 @@
                                 </div>
                                 <div class="textarea-wrapper">
                                     <label for="txtOrigin">Texto de origen</label>
-                                    <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Escribe o copia un texto" required></textarea>
+                                    <textarea id="txtOrigin" name="txtOrigin" class="input" placeholder="Escribe o copia un texto" required maxlength="5000"></textarea>
                                 </div>
                             </div>
                             <div class="section__footer">
@@ -93,7 +96,7 @@
                                 </div>
                             </div>
                             <div class="section__footer">
-                                <button class="btn btn--base">
+                                <button id="btnCopy" class="btn btn--base">
                                     Copiar
                                 </button>
                             </div>

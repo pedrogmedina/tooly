@@ -1,5 +1,7 @@
 'use strict'
-import {getArrayLanguages} from '../js/languages.js'
+
+import {getArrayLanguages} from '../js/languages.js';
+import { Validator } from "./validator.js";
 
 /*Generar listado de idiomas en el select a aprtir de la constante LANGUAGES*/
 export function generateLanguages() {
@@ -13,17 +15,47 @@ export function generateLanguages() {
         optionOrigin.textContent = language.language;
         lanOrigin.appendChild(optionOrigin);
         
-
         const optionTranslate = document.createElement('option');
         optionTranslate.value = language.code;
         optionTranslate.textContent = language.language;
-        lanTranslate.appendChild(optionTranslate);
-        
+        if (optionTranslate.value != "auto") {
+            lanTranslate.appendChild(optionTranslate);
+        } 
     }
 }
 
-export function swapLanguages() {
+export function swapLanguage(node, lanOrigin, txtOrigin, lanTranslate, txtTranslate) {
     
+    try {
+        const refLan = lanOrigin.value;
+        const refTxt = lanOrigin.value;
+
+        if(Validator.validateLanguage(lanOrigin, lanTranslate, node) && lanOrigin.value != "auto") {
+            lanOrigin.value = lanTranslate.value;
+            lanTranslate.value = refLan;
+            Validator.clearMessages(node);
+           
+        }
+
+        if(Validator.validateText(txtOrigin, node)) {
+            txtOrigin.value = txtTranslate.value;
+            txtTranslate.value = refTxt;
+            Validator.clearMessages(node);
+        }
+    }
+    catch(error) {
+        Validator.showMessage (node, error.message,'warning');
+    }   
+}
+
+export function copyText(text, node) {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text)
+            .then(() => Validator.showMessage( node, 'Texto copiado a portapapeles', 'success'))
+            .catch(() => fallbackCopyToClipboard(text));
+    } else {
+        fallbackCopyToClipboard(text);
+    }
 }
 
 
