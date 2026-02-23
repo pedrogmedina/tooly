@@ -28,7 +28,7 @@ export function swapLanguage(node, lanOrigin, txtOrigin, lanTranslate, txtTransl
     
     try {
         const refLan = lanOrigin.value;
-        const refTxt = lanOrigin.value;
+        const refTxt = txtOrigin.value;
 
         if(Validator.validateLanguage(lanOrigin, lanTranslate, node) && lanOrigin.value != "auto") {
             lanOrigin.value = lanTranslate.value;
@@ -56,6 +56,27 @@ export function copyText(text, node) {
     } else {
         fallbackCopyToClipboard(text);
     }
+}
+
+export function showMenu (tools, toggleButton) {
+    let menu = document.querySelector('.menu'); 
+
+    if (!menu) {
+        menu = document.createElement ('div');
+        menu.classList.add ("menu");
+
+        for (const tool of tools) {
+            const menuItem = document.createElement ('a'); 
+            menuItem.classList.add ("link");
+            menuItem.textContent = tool.name;
+            menuItem.href = tool.href;
+            menu.appendChild(menuItem);
+        }
+
+        toggleButton.appendChild(menu);
+    }
+ 
+    return menu;
 }
 
 

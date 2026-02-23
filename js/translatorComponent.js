@@ -15,7 +15,8 @@ export class TranslatorComponent {
             txtTranslate: document.getElementById('txtTranslate'),
             btnTranslate: document.getElementById('btnTranslate'),
             btnSwap: document.getElementById('btnSwap'),
-            btnCopy: document.getElementById('btnCopy')
+            btnCopy: document.getElementById('btnCopy'),
+            btnMenu: document.getElementById('btn-menu')
         }; 
 
         this.init();
@@ -42,6 +43,10 @@ export class TranslatorComponent {
                 this.elements.txtTranslate.value,
                 this.elements.formWrapper);
         });
+
+        this.btnMenu.addEventListener('click', () => {
+            showMenu(this.tools, this.btnMenu);
+        })
 
     }
     

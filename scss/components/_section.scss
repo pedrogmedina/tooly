@@ -7,6 +7,7 @@
     gap: tokens.$gap-l;
     background-color: tokens.$color-surface;
     border-radius: tokens.$border-radius-l;
+    box-shadow: 0 0 4px 0px tokens.$color-opacity-on-surface-15;
 
     &__header {
         display: flex;
@@ -29,6 +30,10 @@
         gap: tokens.$gap-l;
 
         button {
+            width: 100%;
+        }
+
+        a{
             width: 100%;
         }
     }

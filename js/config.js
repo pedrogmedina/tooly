@@ -6,4 +6,9 @@ export const TRANSLATE_API_CONFIG = {
     DATA_TYPE: 't',
 };
 
+export const TOOLS = [
+    {name: "Translator", href: "translator.html"},
+    {name: "Converter", href: "converter.html"}
+]
+
 
