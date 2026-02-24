@@ -3,6 +3,7 @@
 import {getArrayLanguages} from '../js/languages.js';
 import { Validator } from "./validator.js";
 
+
 /*Generar listado de idiomas en el select a aprtir de la constante LANGUAGES*/
 export function generateLanguages() {
     const languages = getArrayLanguages();
@@ -79,4 +80,15 @@ export function showMenu (tools, toggleButton) {
     return menu;
 }
 
+export function activateURL() {
+    const urlActual = window.location.href;
+    const header = document.querySelector('.header');
+    
+    const urlList = header. querySelectorAll('a');
+    for (const url of urlList) {
+        if (urlActual === url.href) {
+            url.classList.add('active');
+        }
+    }
+}
 

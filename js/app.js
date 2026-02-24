@@ -2,7 +2,7 @@
 
 import {TranslatorComponent} from '../js/translatorComponent.js';
 import { TranslationService } from './translationService.js';
-import {showMenu} from './modules.js';
+import {activateURL, showMenu} from './modules.js';
 import { TOOLS } from './config.js';
 
 class App {
@@ -25,6 +25,10 @@ class App {
             menu.classList.toggle('menu--active');
             
         })
+
+        document.addEventListener('DOMContentLoaded', () => {
+            activateURL();
+        });
     }
 }
 
