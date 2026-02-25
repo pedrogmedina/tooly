@@ -1,0 +1,29 @@
+@use '../tokens/tokens';
+
+.check-list {
+    display: flex;
+    flex-direction: column;
+    gap: tokens.$gap-l; 
+    list-style: none;
+    margin: tokens.$margin-none;
+    padding: tokens.$padding-none;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        gap: tokens.$gap-s;
+        align-items: center;
+
+        p {
+            color: tokens.$color-on-surface-var;
+        }
+
+        span {
+            display: block;
+            border-radius: tokens.$border-radius-full;
+            padding: tokens.$padding-xs;
+            background-color: tokens.$color-success-container;
+            color: tokens.$color-on-success-container;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 'use strict'
 
 const LANGUAGES = {
-    AUTO: { code: 'auto', name: 'Detect automatically' },
+    AUTO: { code: 'auto', name: 'Detectar automáticamente' },
     EN: { code: 'en', name: 'English' },
     ES: { code: 'es', name: 'Spanish' },
     FR: { code: 'fr', name: 'French' },

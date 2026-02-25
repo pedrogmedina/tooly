@@ -11,6 +11,7 @@
     font-size: tokens.$font-size-16;
     font-weight: tokens.$font-weight-semibold;
     min-height: 40px;
+    cursor: pointer;
 
     &--primary {
         background-color: tokens.$color-primary;
@@ -35,7 +36,7 @@
         border: solid 1px tokens.$color-primary;
         color: tokens.$color-on-primary;
         opacity: 0.6;
-        cursor: none;
+        cursor: not-allowed;
     }
 
     &--base {
