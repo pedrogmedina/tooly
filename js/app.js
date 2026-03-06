@@ -24,7 +24,6 @@ class App {
         this.btnMenu.addEventListener('click', (e) => {
             const menu = showMenu(this.tools, this.btnMenu);
             menu.classList.toggle('menu--active');
-            
         })
 
         document.addEventListener('DOMContentLoaded', () => {
